@@ -251,6 +251,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="1gZ-IG-9y8" kind="show" identifier="RoutineToSkills" id="cFh-Pi-JjK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUA-UD-3wm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

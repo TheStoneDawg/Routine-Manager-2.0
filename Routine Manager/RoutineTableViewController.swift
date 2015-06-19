@@ -35,7 +35,9 @@ class RoutineTableViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("This Method is in fact called")
+        var cell = tableView.cellForRowAtIndexPath(indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        performSegueWithIdentifier("RoutineToSkills", sender: cell)
     }
 
 }
