@@ -1,0 +1,1 @@
+PODS_ROUTINE_MANAGER_TOAST_OTHER_LDFLAGS = -framework "QuartzCore"

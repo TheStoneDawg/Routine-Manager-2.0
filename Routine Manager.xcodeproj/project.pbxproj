@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4077360F1B3463DB0034D8CF /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */; };
+		40A1D1A21B2E5E84003700B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */; };
+		40A1D1A71B2E5E84003700B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1A51B2E5E84003700B3 /* Main.storyboard */; };
+		40A1D1A91B2E5E84003700B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1A81B2E5E84003700B3 /* Images.xcassets */; };
+		40A1D1AC1B2E5E84003700B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1AA1B2E5E84003700B3 /* LaunchScreen.xib */; };
+		40A1D1B81B2E5E84003700B3 /* Routine_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1D1B71B2E5E84003700B3 /* Routine_ManagerTests.swift */; };
+		40CF1AB21B31C67000233D59 /* GymnastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */; };
+		40CF1AB41B31C87100233D59 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB31B31C87100233D59 /* Routine.swift */; };
+		40CF1AB61B31C8CF00233D59 /* Gymnast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB51B31C8CF00233D59 /* Gymnast.swift */; };
+		40CF1AB81B31C93700233D59 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB71B31C93700233D59 /* Skill.swift */; };
+		40CF1ABB1B31CD7000233D59 /* NewGymnastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */; };
+		40CF1ABF1B32267400233D59 /* NewRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */; };
+		904AFDAD04A5D6ADEFC4AAE1 /* Pods_Routine_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FBA1AD5BB1788C147C8EF /* Pods_Routine_Manager.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40A1D1B21B2E5E84003700B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A1D1941B2E5E84003700B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A1D19B1B2E5E84003700B3;
+			remoteInfo = "Routine Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6FBA1AD5BB1788C147C8EF /* Pods_Routine_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Routine_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		40A1D19C1B2E5E84003700B3 /* Routine Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Routine Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A1D1A01B2E5E84003700B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40A1D1A61B2E5E84003700B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40A1D1A81B2E5E84003700B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40A1D1AB1B2E5E84003700B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		40A1D1B11B2E5E84003700B3 /* Routine ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Routine ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A1D1B61B2E5E84003700B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A1D1B71B2E5E84003700B3 /* Routine_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine_ManagerTests.swift; sourceTree = "<group>"; };
+		40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymnastTableViewController.swift; sourceTree = "<group>"; };
+		40CF1AB31B31C87100233D59 /* Routine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		40CF1AB51B31C8CF00233D59 /* Gymnast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gymnast.swift; sourceTree = "<group>"; };
+		40CF1AB71B31C93700233D59 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGymnastViewController.swift; sourceTree = "<group>"; };
+		40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRoutineViewController.swift; sourceTree = "<group>"; };
+		56B34D14E33C972FF598EDDC /* Pods-Routine Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Routine Manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Routine Manager/Pods-Routine Manager.debug.xcconfig"; sourceTree = "<group>"; };
+		7CFF7868B171214B56A56EA9 /* Pods-Routine Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Routine Manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Routine Manager/Pods-Routine Manager.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A1D1991B2E5E84003700B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904AFDAD04A5D6ADEFC4AAE1 /* Pods_Routine_Manager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A1D1AE1B2E5E84003700B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A1D1931B2E5E84003700B3 = {
+			isa = PBXGroup;
+			children = (
+				40A1D19E1B2E5E84003700B3 /* Routine Manager */,
+				40A1D1B41B2E5E84003700B3 /* Routine ManagerTests */,
+				40A1D19D1B2E5E84003700B3 /* Products */,
+				BEBE98E3A0F886191E7AD317 /* Pods */,
+				D42FBA5A84F0397AA65D5EF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40A1D19D1B2E5E84003700B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40A1D19C1B2E5E84003700B3 /* Routine Manager.app */,
+				40A1D1B11B2E5E84003700B3 /* Routine ManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A1D19E1B2E5E84003700B3 /* Routine Manager */ = {
+			isa = PBXGroup;
+			children = (
+				40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */,
+				40A1D1A51B2E5E84003700B3 /* Main.storyboard */,
+				4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */,
+				40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */,
+				40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */,
+				40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */,
+				40A1D1A81B2E5E84003700B3 /* Images.xcassets */,
+				40A1D1AA1B2E5E84003700B3 /* LaunchScreen.xib */,
+				40CF1AB91B31C98F00233D59 /* Realm Files */,
+				40A1D19F1B2E5E84003700B3 /* Supporting Files */,
+			);
+			path = "Routine Manager";
+			sourceTree = "<group>";
+		};
+		40A1D19F1B2E5E84003700B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A1D1A01B2E5E84003700B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40A1D1B41B2E5E84003700B3 /* Routine ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				40A1D1B71B2E5E84003700B3 /* Routine_ManagerTests.swift */,
+				40A1D1B51B2E5E84003700B3 /* Supporting Files */,
+			);
+			path = "Routine ManagerTests";
+			sourceTree = "<group>";
+		};
+		40A1D1B51B2E5E84003700B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A1D1B61B2E5E84003700B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40CF1AB91B31C98F00233D59 /* Realm Files */ = {
+			isa = PBXGroup;
+			children = (
+				40CF1AB31B31C87100233D59 /* Routine.swift */,
+				40CF1AB71B31C93700233D59 /* Skill.swift */,
+				40CF1AB51B31C8CF00233D59 /* Gymnast.swift */,
+			);
+			name = "Realm Files";
+			sourceTree = "<group>";
+		};
+		BEBE98E3A0F886191E7AD317 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56B34D14E33C972FF598EDDC /* Pods-Routine Manager.debug.xcconfig */,
+				7CFF7868B171214B56A56EA9 /* Pods-Routine Manager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D42FBA5A84F0397AA65D5EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FBA1AD5BB1788C147C8EF /* Pods_Routine_Manager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40A1D19B1B2E5E84003700B3 /* Routine Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A1D1BB1B2E5E84003700B3 /* Build configuration list for PBXNativeTarget "Routine Manager" */;
+			buildPhases = (
+				97F97CD0B362E57C0D93BB6D /* Check Pods Manifest.lock */,
+				40A1D1981B2E5E84003700B3 /* Sources */,
+				40A1D1991B2E5E84003700B3 /* Frameworks */,
+				40A1D19A1B2E5E84003700B3 /* Resources */,
+				7BBE2393D40BBF92710A1827 /* Embed Pods Frameworks */,
+				2D2827E4926A9D8EB23B68A2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Routine Manager";
+			productName = "Routine Manager";
+			productReference = 40A1D19C1B2E5E84003700B3 /* Routine Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40A1D1B01B2E5E84003700B3 /* Routine ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A1D1BE1B2E5E84003700B3 /* Build configuration list for PBXNativeTarget "Routine ManagerTests" */;
+			buildPhases = (
+				40A1D1AD1B2E5E84003700B3 /* Sources */,
+				40A1D1AE1B2E5E84003700B3 /* Frameworks */,
+				40A1D1AF1B2E5E84003700B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40A1D1B31B2E5E84003700B3 /* PBXTargetDependency */,
+			);
+			name = "Routine ManagerTests";
+			productName = "Routine ManagerTests";
+			productReference = 40A1D1B11B2E5E84003700B3 /* Routine ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40A1D1941B2E5E84003700B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Samuel Resendez";
+				TargetAttributes = {
+					40A1D19B1B2E5E84003700B3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					40A1D1B01B2E5E84003700B3 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 40A1D19B1B2E5E84003700B3;
+					};
+				};
+			};
+			buildConfigurationList = 40A1D1971B2E5E84003700B3 /* Build configuration list for PBXProject "Routine Manager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40A1D1931B2E5E84003700B3;
+			productRefGroup = 40A1D19D1B2E5E84003700B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A1D19B1B2E5E84003700B3 /* Routine Manager */,
+				40A1D1B01B2E5E84003700B3 /* Routine ManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40A1D19A1B2E5E84003700B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A1D1A71B2E5E84003700B3 /* Main.storyboard in Resources */,
+				40A1D1AC1B2E5E84003700B3 /* LaunchScreen.xib in Resources */,
+				40A1D1A91B2E5E84003700B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A1D1AF1B2E5E84003700B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D2827E4926A9D8EB23B68A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Routine Manager/Pods-Routine Manager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BBE2393D40BBF92710A1827 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Routine Manager/Pods-Routine Manager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97F97CD0B362E57C0D93BB6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40A1D1981B2E5E84003700B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4077360F1B3463DB0034D8CF /* RoutineTableViewController.swift in Sources */,
+				40CF1ABF1B32267400233D59 /* NewRoutineViewController.swift in Sources */,
+				40CF1AB21B31C67000233D59 /* GymnastTableViewController.swift in Sources */,
+				40CF1ABB1B31CD7000233D59 /* NewGymnastViewController.swift in Sources */,
+				40A1D1A21B2E5E84003700B3 /* AppDelegate.swift in Sources */,
+				40CF1AB81B31C93700233D59 /* Skill.swift in Sources */,
+				40CF1AB41B31C87100233D59 /* Routine.swift in Sources */,
+				40CF1AB61B31C8CF00233D59 /* Gymnast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A1D1AD1B2E5E84003700B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A1D1B81B2E5E84003700B3 /* Routine_ManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40A1D1B31B2E5E84003700B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A1D19B1B2E5E84003700B3 /* Routine Manager */;
+			targetProxy = 40A1D1B21B2E5E84003700B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40A1D1A51B2E5E84003700B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A1D1A61B2E5E84003700B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40A1D1AA1B2E5E84003700B3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A1D1AB1B2E5E84003700B3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40A1D1B91B2E5E84003700B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40A1D1BA1B2E5E84003700B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40A1D1BC1B2E5E84003700B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B34D14E33C972FF598EDDC /* Pods-Routine Manager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Routine Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40A1D1BD1B2E5E84003700B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CFF7868B171214B56A56EA9 /* Pods-Routine Manager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Routine Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		40A1D1BF1B2E5E84003700B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Routine ManagerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Routine Manager.app/Routine Manager";
+			};
+			name = Debug;
+		};
+		40A1D1C01B2E5E84003700B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Routine ManagerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Routine Manager.app/Routine Manager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40A1D1971B2E5E84003700B3 /* Build configuration list for PBXProject "Routine Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A1D1B91B2E5E84003700B3 /* Debug */,
+				40A1D1BA1B2E5E84003700B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A1D1BB1B2E5E84003700B3 /* Build configuration list for PBXNativeTarget "Routine Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A1D1BC1B2E5E84003700B3 /* Debug */,
+				40A1D1BD1B2E5E84003700B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A1D1BE1B2E5E84003700B3 /* Build configuration list for PBXNativeTarget "Routine ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A1D1BF1B2E5E84003700B3 /* Debug */,
+				40A1D1C01B2E5E84003700B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40A1D1941B2E5E84003700B3 /* Project object */;
+}
