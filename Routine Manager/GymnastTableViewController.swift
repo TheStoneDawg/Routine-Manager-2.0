@@ -26,7 +26,16 @@ class GymnastTableViewController: UITableViewController {
         cell.textLabel!.text = gymnast.name
         return cell
     }
-    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            var gymnastName = (self.tableView.cellForRowAtIndexPath(indexPath))?.textLabel?.text
+            let gymnast = Realm().objects(Gymnast).filter("name = %@",gymnastName!)
+            Realm().write {
+                Realm().delete(gymnast)
+        }
+        self.tableView.reloadData()
+    }
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dest = segue.destinationViewController as? RoutineTableViewController {

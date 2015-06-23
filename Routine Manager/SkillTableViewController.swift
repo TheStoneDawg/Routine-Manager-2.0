@@ -10,15 +10,13 @@ import RealmSwift
 
 class SkillTableViewController: UITableViewController {
     
-////////Should be set by Segue
+//////////////Should be set by Segue/////////////////
     var routineName = ""
     var gymnastName = ""
 ////////////////////////////////////////////////////
     
     
     override func viewDidAppear(animated: Bool) {
-        println(routineName)
-        println(gymnastName)
         self.tableView.reloadData()
     }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,7 +35,15 @@ class SkillTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
-    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@",routineName,gymnastName).first
+            Realm().write {
+                routine!.skills.removeAtIndex(indexPath.row)
+            }
+            self.tableView.reloadData()
+        }
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dest = segue.destinationViewController as? SelectedSkillTableViewController {

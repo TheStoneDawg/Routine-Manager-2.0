@@ -28,6 +28,20 @@ class RoutineTableViewController: UITableViewController {
         
         return cell
     }
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@",(self.tableView.cellForRowAtIndexPath(indexPath))!.textLabel!.text!,gymnastName)
+            Realm().write {
+                Realm().delete(routine)
+            }
+            self.tableView.reloadData()
+            
+        }
+    }
+    
+    
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dest = segue.destinationViewController as? NewRoutineViewController {
             dest.gymnastName = gymnastName

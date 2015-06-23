@@ -39,8 +39,6 @@ class SelectedSkillTableViewController: UITableViewController, UISearchResultsUp
 
     override func viewDidAppear(animated: Bool) {
         self.tableView.reloadData()
-        println(gymnastName)
-        println(routineName)
     }
     //IT WORKS OHMYGOSH
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,6 +81,18 @@ class SelectedSkillTableViewController: UITableViewController, UISearchResultsUp
             return cell
         }
     }
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@", routineName, gymnastName).first
+            let skills = Realm().objects(Skill).filter("event = %@ AND name = %@",routine!.event, (self.tableView.cellForRowAtIndexPath(indexPath))!.textLabel!.text!)
+            Realm().write {
+                Realm().delete(skills)
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let dest = segue.destinationViewController as? NewSkillViewController {

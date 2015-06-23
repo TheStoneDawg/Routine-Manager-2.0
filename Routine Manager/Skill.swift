@@ -14,6 +14,7 @@ class Skill: Object {
     dynamic var value = 0.0
     dynamic var event = ""
     dynamic var elementGroup = ""
+    
     //workaround since computedProperties are not being persisted
     dynamic var searchableName = ""
    }

@@ -13,10 +13,6 @@ class NewRoutineViewController: UIViewController {
     var gymnastName = ""
     
     
-    override func viewDidAppear(animated: Bool) {
-        println(gymnastName)
-    }
-    
     
     @IBOutlet weak var eventSegControl: UISegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
