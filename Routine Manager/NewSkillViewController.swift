@@ -26,6 +26,7 @@ class NewSkillViewController: UIViewController {
         newSkill.value = (valueTextField.text! as NSString).doubleValue
         newSkill.event = eventSegControl.titleForSegmentAtIndex(eventSegControl.selectedSegmentIndex)!
         newSkill.elementGroup = elemGroupSegControl.titleForSegmentAtIndex(elemGroupSegControl.selectedSegmentIndex)!
+        newSkill.searchableName = (nameTextField!.text!).lowercaseString
         Realm().write {
             Realm().add(newSkill)
         }

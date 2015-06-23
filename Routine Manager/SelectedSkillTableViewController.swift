@@ -10,13 +10,31 @@ import RealmSwift
 import UIKit
 
 
-class SelectedSkillTableViewController: UITableViewController {
+class SelectedSkillTableViewController: UITableViewController, UISearchResultsUpdating {
     //Set by Segue
     var gymnastName = ""
     var routineName = ""
     
     //Other vars
+    var searchController = UISearchController()
     
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        self.tableView.reloadData()
+    }
+    
+    
+    override func viewDidLoad() {
+        self.searchController = ({
+            let controller = UISearchController(searchResultsController: nil)
+            controller.searchResultsUpdater = self
+            controller.dimsBackgroundDuringPresentation = false
+            controller.searchBar.sizeToFit()
+            
+            self.tableView.tableHeaderView = controller.searchBar
+            return controller
+        })()
+    }
+
     
 
     override func viewDidAppear(animated: Bool) {
@@ -26,21 +44,44 @@ class SelectedSkillTableViewController: UITableViewController {
     }
     //IT WORKS OHMYGOSH
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@", routineName, gymnastName).first
-        let skills = Realm().objects(Skill).filter("event = %@",routine!.event)
-        return skills.count
+        
+        if (self.searchController.active) {
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@", routineName, gymnastName).first
+            let skills = Realm().objects(Skill).filter("event = %@ AND name CONTAINS %@",routine!.event,self.searchController.searchBar.text)
+            return skills.count
+        }
+        else {
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@", routineName, gymnastName).first
+            let skills = Realm().objects(Skill).filter("event = %@",routine!.event)
+            return skills.count
+        }
     }
     //YEAAAAAAHHHHH
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("selSkillIdentifier") as! UITableViewCell
-        cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "selSkillIdentifier")
+        
+        if (self.searchController.active) {
+            var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("selSkillIdentifier") as! UITableViewCell
+            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "selSkillIdentifier")
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@",routineName,gymnastName).first
+            let filteredSkills = Realm().objects(Skill).filter("event = %@ AND searchableName CONTAINS %@",routine!.event,(self.searchController.searchBar.text).lowercaseString)
+            cell.textLabel!.text = filteredSkills[indexPath.row].name
+            cell.detailTextLabel!.text = "\(filteredSkills[indexPath.row].value)"
+            
+            return cell
+            
+        }
+        
+        else {
+            var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("selSkillIdentifier") as! UITableViewCell
+            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "selSkillIdentifier")
         
         
-        let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@",routineName,gymnastName).first
-        let skills = Realm().objects(Skill).filter("event = %@",routine!.event)
-        cell.textLabel!.text = skills[indexPath.row].name
-        cell.detailTextLabel!.text = "\(skills[indexPath.row].value)"
-        return cell
+            let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@",routineName,gymnastName).first
+            let skills = Realm().objects(Skill).filter("event = %@",routine!.event)
+            cell.textLabel!.text = skills[indexPath.row].name
+            cell.detailTextLabel!.text = "\(skills[indexPath.row].value)"
+            return cell
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -49,6 +90,7 @@ class SelectedSkillTableViewController: UITableViewController {
             dest.routineName = routineName
         }
     }
+
     
     
     
@@ -61,7 +103,7 @@ class SelectedSkillTableViewController: UITableViewController {
         Realm().write{
             routine!.skills.append(skill!)
         }
-        self.view.makeToast("\(skill!.name) successfully added!", duration: 1.0, position: CSToastPositionTop)
+        self.view.makeToast("\(skill!.name) successfully added!", duration: 1.0, position: CSToastPositionCenter)
     }
 }
 
