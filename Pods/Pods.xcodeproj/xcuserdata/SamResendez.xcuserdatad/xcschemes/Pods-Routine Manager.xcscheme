@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F463771CABA203A9A8B0C468"
+               BlueprintIdentifier = "18E6FC978B91089B0AEF64E7"
                BuildableName = "Pods_Routine_Manager.framework"
                BlueprintName = "Pods-Routine Manager"
                ReferencedContainer = "container:Pods.xcodeproj">

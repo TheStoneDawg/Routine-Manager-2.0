@@ -26,6 +26,7 @@ class NewRoutineViewController: UIViewController {
         let newRoutine = Routine()
         newRoutine.event = eventSegControl.titleForSegmentAtIndex(eventSegControl.selectedSegmentIndex)!
         newRoutine.name = nameTextField.text!
+        newRoutine.gymnastName = gymnastName
         let gymnast = Realm().objects(Gymnast).filter("name = %@",gymnastName).first
         Realm().write {
             gymnast!.routines.append(newRoutine)

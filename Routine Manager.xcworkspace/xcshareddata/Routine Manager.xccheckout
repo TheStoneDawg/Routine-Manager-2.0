@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7E84AB28-BE0C-40F7-A384-B37C8B5E982D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Routine Manager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DAED1BA93270F5A1DEE407C685275D5123BF1FD2</key>
+		<string>https://github.com/TheStoneDawg/Routine-Manager-2.0.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Routine Manager.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DAED1BA93270F5A1DEE407C685275D5123BF1FD2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TheStoneDawg/Routine-Manager-2.0.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DAED1BA93270F5A1DEE407C685275D5123BF1FD2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DAED1BA93270F5A1DEE407C685275D5123BF1FD2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Routine%20Manager</string>
+		</dict>
+	</array>
+</dict>
+</plist>

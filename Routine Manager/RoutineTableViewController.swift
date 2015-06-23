@@ -32,9 +32,14 @@ class RoutineTableViewController: UITableViewController {
         if let dest = segue.destinationViewController as? NewRoutineViewController {
             dest.gymnastName = gymnastName
         }
+        if let dest = segue.destinationViewController as? SkillTableViewController {
+            if let cell = sender as? UITableViewCell {
+                dest.routineName = cell.textLabel!.text!
+            }
+            dest.gymnastName = gymnastName
+        }
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("This Method is in fact called")
         var cell = tableView.cellForRowAtIndexPath(indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         performSegueWithIdentifier("RoutineToSkills", sender: cell)

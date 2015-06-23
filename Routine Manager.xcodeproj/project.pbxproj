@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4046E7841B35D43700826833 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4046E7831B35D43700826833 /* UIView+Toast.m */; };
 		4077360F1B3463DB0034D8CF /* RoutineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */; };
+		408EF5CE1B35BCB20054C83A /* NewSkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF5CD1B35BCB20054C83A /* NewSkillViewController.swift */; };
+		408EF5D01B35BCD80054C83A /* SelectedSkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF5CF1B35BCD80054C83A /* SelectedSkillTableViewController.swift */; };
 		40A1D1A21B2E5E84003700B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */; };
 		40A1D1A71B2E5E84003700B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1A51B2E5E84003700B3 /* Main.storyboard */; };
 		40A1D1A91B2E5E84003700B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1A81B2E5E84003700B3 /* Images.xcassets */; };
@@ -19,6 +22,7 @@
 		40CF1AB81B31C93700233D59 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB71B31C93700233D59 /* Skill.swift */; };
 		40CF1ABB1B31CD7000233D59 /* NewGymnastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */; };
 		40CF1ABF1B32267400233D59 /* NewRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */; };
+		40CF94171B354E18005895E1 /* SkillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF94161B354E18005895E1 /* SkillTableViewController.swift */; };
 		904AFDAD04A5D6ADEFC4AAE1 /* Pods_Routine_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FBA1AD5BB1788C147C8EF /* Pods_Routine_Manager.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,7 +38,11 @@
 
 /* Begin PBXFileReference section */
 		0C6FBA1AD5BB1788C147C8EF /* Pods_Routine_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Routine_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4046E7821B35D43700826833 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		4046E7831B35D43700826833 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineTableViewController.swift; sourceTree = "<group>"; };
+		408EF5CD1B35BCB20054C83A /* NewSkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSkillViewController.swift; sourceTree = "<group>"; };
+		408EF5CF1B35BCD80054C83A /* SelectedSkillTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedSkillTableViewController.swift; sourceTree = "<group>"; };
 		40A1D19C1B2E5E84003700B3 /* Routine Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Routine Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A1D1A01B2E5E84003700B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +58,7 @@
 		40CF1AB71B31C93700233D59 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGymnastViewController.swift; sourceTree = "<group>"; };
 		40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRoutineViewController.swift; sourceTree = "<group>"; };
+		40CF94161B354E18005895E1 /* SkillTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewController.swift; sourceTree = "<group>"; };
 		56B34D14E33C972FF598EDDC /* Pods-Routine Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Routine Manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Routine Manager/Pods-Routine Manager.debug.xcconfig"; sourceTree = "<group>"; };
 		7CFF7868B171214B56A56EA9 /* Pods-Routine Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Routine Manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Routine Manager/Pods-Routine Manager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +82,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4046E7851B35D43D00826833 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				4046E7821B35D43700826833 /* UIView+Toast.h */,
+				4046E7831B35D43700826833 /* UIView+Toast.m */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
+		4046E7881B35D4A300826833 /* Gymnast VCs */ = {
+			isa = PBXGroup;
+			children = (
+				40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */,
+				40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */,
+			);
+			name = "Gymnast VCs";
+			sourceTree = "<group>";
+		};
+		4046E7891B35D4A900826833 /* Routine VCs */ = {
+			isa = PBXGroup;
+			children = (
+				4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */,
+				40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */,
+			);
+			name = "Routine VCs";
+			sourceTree = "<group>";
+		};
+		408EF5D11B35BCE00054C83A /* Skill VCs */ = {
+			isa = PBXGroup;
+			children = (
+				40CF94161B354E18005895E1 /* SkillTableViewController.swift */,
+				408EF5CD1B35BCB20054C83A /* NewSkillViewController.swift */,
+				408EF5CF1B35BCD80054C83A /* SelectedSkillTableViewController.swift */,
+			);
+			name = "Skill VCs";
+			sourceTree = "<group>";
+		};
 		40A1D1931B2E5E84003700B3 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +144,10 @@
 			children = (
 				40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */,
 				40A1D1A51B2E5E84003700B3 /* Main.storyboard */,
-				4077360E1B3463DB0034D8CF /* RoutineTableViewController.swift */,
-				40CF1ABE1B32267400233D59 /* NewRoutineViewController.swift */,
-				40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */,
-				40CF1ABA1B31CD7000233D59 /* NewGymnastViewController.swift */,
+				4046E7851B35D43D00826833 /* Toast */,
+				408EF5D11B35BCE00054C83A /* Skill VCs */,
+				4046E7891B35D4A900826833 /* Routine VCs */,
+				4046E7881B35D4A300826833 /* Gymnast VCs */,
 				40A1D1A81B2E5E84003700B3 /* Images.xcassets */,
 				40A1D1AA1B2E5E84003700B3 /* LaunchScreen.xib */,
 				40CF1AB91B31C98F00233D59 /* Realm Files */,
@@ -313,12 +359,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4046E7841B35D43700826833 /* UIView+Toast.m in Sources */,
 				4077360F1B3463DB0034D8CF /* RoutineTableViewController.swift in Sources */,
 				40CF1ABF1B32267400233D59 /* NewRoutineViewController.swift in Sources */,
 				40CF1AB21B31C67000233D59 /* GymnastTableViewController.swift in Sources */,
+				408EF5CE1B35BCB20054C83A /* NewSkillViewController.swift in Sources */,
 				40CF1ABB1B31CD7000233D59 /* NewGymnastViewController.swift in Sources */,
 				40A1D1A21B2E5E84003700B3 /* AppDelegate.swift in Sources */,
 				40CF1AB81B31C93700233D59 /* Skill.swift in Sources */,
+				40CF94171B354E18005895E1 /* SkillTableViewController.swift in Sources */,
+				408EF5D01B35BCD80054C83A /* SelectedSkillTableViewController.swift in Sources */,
 				40CF1AB41B31C87100233D59 /* Routine.swift in Sources */,
 				40CF1AB61B31C8CF00233D59 /* Gymnast.swift in Sources */,
 			);
@@ -402,6 +452,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -439,6 +490,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -448,9 +500,12 @@
 			baseConfigurationReference = 56B34D14E33C972FF598EDDC /* Pods-Routine Manager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Routine Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Routine Manager/Routine Manager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -459,9 +514,11 @@
 			baseConfigurationReference = 7CFF7868B171214B56A56EA9 /* Pods-Routine Manager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Routine Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Routine Manager/Routine Manager-Bridging-Header.h";
 			};
 			name = Release;
 		};

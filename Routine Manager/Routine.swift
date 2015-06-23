@@ -12,7 +12,13 @@ import RealmSwift
 class Routine: Object {
     dynamic var gymnastName = ""
     dynamic var name = ""
-    dynamic var startValue = 0.0
+    var startValue: Double {
+        var start = 0.0
+        for skill in skills {
+            start += skill.value
+        }
+        return start
+    }
     dynamic var event = ""
     let skills = List<Skill>()
 }

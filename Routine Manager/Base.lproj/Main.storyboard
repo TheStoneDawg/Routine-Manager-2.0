@@ -161,16 +161,126 @@
             </objects>
             <point key="canvasLocation" x="-354" y="-959"/>
         </scene>
+        <!--New Skill-->
+        <scene sceneID="6GX-eX-aEO">
+            <objects>
+                <viewController id="TQb-VK-7HQ" customClass="NewSkillViewController" customModule="Routine_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8T5-yR-5sR"/>
+                        <viewControllerLayoutGuide type="bottom" id="eQn-1P-gzf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BhS-V0-jKX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-84-dFx">
+                                <rect key="frame" x="275" y="79" width="50.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gij-wt-Rh3">
+                                <rect key="frame" x="277" y="166" width="46.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNd-MF-De0">
+                                <rect key="frame" x="277" y="271" width="48" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Element Group:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-EX-Lal">
+                                <rect key="frame" x="239" y="390" width="120" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHi-6V-k3w">
+                                <rect key="frame" x="46" y="103" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-y2-1Zz">
+                                <rect key="frame" x="46" y="298" width="508" height="29"/>
+                                <segments>
+                                    <segment title="Floor"/>
+                                    <segment title="Pommel"/>
+                                    <segment title="Rings"/>
+                                    <segment title="Vault"/>
+                                    <segment title="Parallel Bars"/>
+                                    <segment title="High Bar"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Uxn-Ku-bme">
+                                <rect key="frame" x="46" y="424" width="508" height="29"/>
+                                <segments>
+                                    <segment title="I"/>
+                                    <segment title="II"/>
+                                    <segment title="III"/>
+                                    <segment title="IV"/>
+                                    <segment title="V"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBT-l5-FXI">
+                                <rect key="frame" x="116" y="194" width="368" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uxn-Ku-bme" firstAttribute="top" secondItem="NMZ-EX-Lal" secondAttribute="bottom" constant="14" id="01S-s7-rpl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Llt-y2-1Zz" secondAttribute="trailing" constant="30" id="2p9-6p-TEg"/>
+                            <constraint firstItem="OHi-6V-k3w" firstAttribute="leading" secondItem="BhS-V0-jKX" secondAttribute="leadingMargin" constant="30" id="3B3-k7-24C"/>
+                            <constraint firstAttribute="centerX" secondItem="MPD-84-dFx" secondAttribute="centerX" constant="-0.25" id="5Of-2E-ybd"/>
+                            <constraint firstItem="OHi-6V-k3w" firstAttribute="top" secondItem="MPD-84-dFx" secondAttribute="bottom" constant="3.5" id="DEH-vQ-9hD"/>
+                            <constraint firstItem="Llt-y2-1Zz" firstAttribute="leading" secondItem="BhS-V0-jKX" secondAttribute="leadingMargin" constant="30" id="Df2-fK-CAz"/>
+                            <constraint firstItem="Gij-wt-Rh3" firstAttribute="top" secondItem="OHi-6V-k3w" secondAttribute="bottom" constant="33" id="GKO-JP-vLD"/>
+                            <constraint firstItem="Llt-y2-1Zz" firstAttribute="top" secondItem="mNd-MF-De0" secondAttribute="bottom" constant="7" id="MJn-qK-jj2"/>
+                            <constraint firstItem="mNd-MF-De0" firstAttribute="top" secondItem="ZBT-l5-FXI" secondAttribute="bottom" constant="47" id="Nc2-Lg-fWL"/>
+                            <constraint firstAttribute="centerX" secondItem="Gij-wt-Rh3" secondAttribute="centerX" constant="-0.25" id="UFZ-hW-KBc"/>
+                            <constraint firstItem="NMZ-EX-Lal" firstAttribute="top" secondItem="Llt-y2-1Zz" secondAttribute="bottom" constant="63.5" id="Y4Y-i3-d0n"/>
+                            <constraint firstItem="ZBT-l5-FXI" firstAttribute="leading" secondItem="BhS-V0-jKX" secondAttribute="leadingMargin" constant="100" id="YT0-vz-8ap"/>
+                            <constraint firstItem="ZBT-l5-FXI" firstAttribute="top" secondItem="Gij-wt-Rh3" secondAttribute="bottom" constant="7" id="aNP-mO-zPq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OHi-6V-k3w" secondAttribute="trailing" constant="30" id="cwN-3B-b5A"/>
+                            <constraint firstAttribute="centerX" secondItem="mNd-MF-De0" secondAttribute="centerX" constant="-0.75" id="fQm-9l-QQl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uxn-Ku-bme" secondAttribute="trailing" constant="30" id="j4c-gO-tcy"/>
+                            <constraint firstItem="Uxn-Ku-bme" firstAttribute="leading" secondItem="BhS-V0-jKX" secondAttribute="leadingMargin" constant="30" id="mn4-2i-9o0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZBT-l5-FXI" secondAttribute="trailing" constant="100" id="quK-jt-W5f"/>
+                            <constraint firstItem="MPD-84-dFx" firstAttribute="top" secondItem="8T5-yR-5sR" secondAttribute="bottom" constant="15" id="quu-6E-T0P"/>
+                            <constraint firstAttribute="centerX" secondItem="NMZ-EX-Lal" secondAttribute="centerX" constant="1" id="s8v-Pd-CE0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Skill" id="LLP-wu-Pcb">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="f50-fD-zPu">
+                            <connections>
+                                <action selector="donePressed:" destination="TQb-VK-7HQ" id="YDO-lG-fVx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="elemGroupSegControl" destination="Uxn-Ku-bme" id="P5X-RJ-bT0"/>
+                        <outlet property="eventSegControl" destination="Llt-y2-1Zz" id="By1-c4-PRk"/>
+                        <outlet property="nameTextField" destination="OHi-6V-k3w" id="OPM-PH-SPh"/>
+                        <outlet property="valueTextField" destination="ZBT-l5-FXI" id="hRL-hZ-abr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rwa-0Y-f5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="-1666"/>
+        </scene>
         <!--Select Skills-->
         <scene sceneID="96h-1p-6QT">
             <objects>
-                <tableViewController id="3R0-dt-dCZ" sceneMemberID="viewController">
+                <tableViewController id="3R0-dt-dCZ" customClass="SelectedSkillTableViewController" customModule="Routine_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mOJ-BQ-TnU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="frL-lR-J2m">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selSkillIdentifier" id="frL-lR-J2m">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="frL-lR-J2m" id="y1w-wk-GYd">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -183,7 +293,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Select Skills" id="LYZ-VV-jo6">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="jgT-vo-KTT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="jgT-vo-KTT">
+                            <connections>
+                                <segue destination="TQb-VK-7HQ" kind="show" id="0Z1-tc-SKf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kP7-Cy-rkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,13 +307,13 @@
         <!--Skills-->
         <scene sceneID="U7f-if-95n">
             <objects>
-                <tableViewController id="1gZ-IG-9y8" sceneMemberID="viewController">
+                <tableViewController id="1gZ-IG-9y8" customClass="SkillTableViewController" customModule="Routine_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mC9-Pz-Aed">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u72-cV-Qyd">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="skillCellIdentifier" id="u72-cV-Qyd">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u72-cV-Qyd" id="Jy0-xj-kRn">
                                     <autoresizingMask key="autoresizingMask"/>
