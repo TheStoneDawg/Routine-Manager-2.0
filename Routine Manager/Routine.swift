@@ -14,7 +14,7 @@ class Routine: Object {
     dynamic var name = ""
     var startValue: Double {
         
-        var start = 10.0
+        var start = 10.5
         
         var isI = false
         var isII = false
@@ -46,11 +46,6 @@ class Routine: Object {
                 if (!isIV){
                     start += 0.5
                     isIV = true
-                }
-            case "V":
-                if (!isV) {
-                    start += 0.5
-                    isV = true
                 }
             default:
                 start += 0.0

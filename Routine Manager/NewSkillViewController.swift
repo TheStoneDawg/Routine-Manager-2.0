@@ -30,7 +30,7 @@ class NewSkillViewController: UIViewController {
         Realm().write {
             Realm().add(newSkill)
         }
-        self.navigationController?.popViewControllerAnimated(true)
+        //self.navigationController?.popViewControllerAnimated(true)
     }
     
 

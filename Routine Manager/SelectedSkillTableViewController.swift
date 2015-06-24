@@ -45,7 +45,7 @@ class SelectedSkillTableViewController: UITableViewController, UISearchResultsUp
         
         if (self.searchController.active) {
             let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@", routineName, gymnastName).first
-            let skills = Realm().objects(Skill).filter("event = %@ AND name CONTAINS %@",routine!.event,self.searchController.searchBar.text)
+            let skills = Realm().objects(Skill).filter("event = %@ AND searchableName CONTAINS %@",routine!.event,self.searchController.searchBar.text.lowercaseString)
             return skills.count
         }
         else {
@@ -61,7 +61,8 @@ class SelectedSkillTableViewController: UITableViewController, UISearchResultsUp
             var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("selSkillIdentifier") as! UITableViewCell
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "selSkillIdentifier")
             let routine = Realm().objects(Routine).filter("name = %@ AND gymnastName = %@",routineName,gymnastName).first
-            let filteredSkills = Realm().objects(Skill).filter("event = %@ AND searchableName CONTAINS %@",routine!.event,(self.searchController.searchBar.text).lowercaseString)
+            var searchString = (self.searchController.searchBar.text).lowercaseString
+            let filteredSkills = Realm().objects(Skill).filter("event = %@ AND searchableName CONTAINS %@",routine!.event,searchString)
             cell.textLabel!.text = filteredSkills[indexPath.row].name
             cell.detailTextLabel!.text = "\(filteredSkills[indexPath.row].value)"
             
