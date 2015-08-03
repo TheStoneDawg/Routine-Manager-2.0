@@ -14,7 +14,7 @@ class Routine: Object {
     dynamic var name = ""
     var startValue: Double {
         
-        var start = 10.5
+        var start = 10.0
         
         var isI = false
         var isII = false
@@ -24,36 +24,37 @@ class Routine: Object {
         
         for skill in skills {
             start += skill.value
-            switch skill.elementGroup {
-            case "I":
-                if (!isI) {
-                    start += 0.5
-                }
-                isI = true
-            case "II":
-                if (!isII) {
-                    start += 0.5
-                    isII = true
-                }
+            if event != "Vault" {
+                switch skill.elementGroup {
+                case "I":
+                    if (!isI) {
+                        start += 0.5
+                    }
+                    isI = true
+                case "II":
+                    if (!isII) {
+                        start += 0.5
+                        isII = true
+                    }
                 
-            case "III":
-                if (!isIII) {
-                    start += 0.5
-                    isIII = true
-                }
+                case "III":
+                    if (!isIII) {
+                        start += 0.5
+                        isIII = true
+                    }
                 
-            case "IV":
-                if (!isIV){
-                    start += 0.5
-                    isIV = true
-                }
-            default:
-                start += 0.0
-                println("something went wrong with elementGroup addition to startValue")
-                
+                case "IV":
+                    if (!isIV){
+                        start += 0.5
+                        isIV = true
+                    }
+                default:
+                    start += 0.0
+                    println("something went wrong with elementGroup addition to startValue")
             }
             
         }
+    }
 
         return start
     }

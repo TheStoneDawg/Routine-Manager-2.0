@@ -16,6 +16,7 @@
 		40A1D1A91B2E5E84003700B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1A81B2E5E84003700B3 /* Images.xcassets */; };
 		40A1D1AC1B2E5E84003700B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A1D1AA1B2E5E84003700B3 /* LaunchScreen.xib */; };
 		40A1D1B81B2E5E84003700B3 /* Routine_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1D1B71B2E5E84003700B3 /* Routine_ManagerTests.swift */; };
+		40A517C81B65872100471752 /* v1.realm in Resources */ = {isa = PBXBuildFile; fileRef = 40A517C71B6586A500471752 /* v1.realm */; };
 		40CF1AB21B31C67000233D59 /* GymnastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */; };
 		40CF1AB41B31C87100233D59 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB31B31C87100233D59 /* Routine.swift */; };
 		40CF1AB61B31C8CF00233D59 /* Gymnast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1AB51B31C8CF00233D59 /* Gymnast.swift */; };
@@ -52,6 +53,7 @@
 		40A1D1B11B2E5E84003700B3 /* Routine ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Routine ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A1D1B61B2E5E84003700B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A1D1B71B2E5E84003700B3 /* Routine_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine_ManagerTests.swift; sourceTree = "<group>"; };
+		40A517C71B6586A500471752 /* v1.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = v1.realm; sourceTree = "<group>"; };
 		40CF1AB11B31C67000233D59 /* GymnastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymnastTableViewController.swift; sourceTree = "<group>"; };
 		40CF1AB31B31C87100233D59 /* Routine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		40CF1AB51B31C8CF00233D59 /* Gymnast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gymnast.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		40A1D19E1B2E5E84003700B3 /* Routine Manager */ = {
 			isa = PBXGroup;
 			children = (
+				40A517C71B6586A500471752 /* v1.realm */,
 				40A1D1A11B2E5E84003700B3 /* AppDelegate.swift */,
 				40A1D1A51B2E5E84003700B3 /* Main.storyboard */,
 				4046E7851B35D43D00826833 /* Toast */,
@@ -291,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A517C81B65872100471752 /* v1.realm in Resources */,
 				40A1D1A71B2E5E84003700B3 /* Main.storyboard in Resources */,
 				40A1D1AC1B2E5E84003700B3 /* LaunchScreen.xib in Resources */,
 				40A1D1A91B2E5E84003700B3 /* Images.xcassets in Resources */,

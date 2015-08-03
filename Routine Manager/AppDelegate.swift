@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        var currentRealmPath = NSBundle.mainBundle().resourcePath?.stringByAppendingPathComponent("v1.realm")
+        
+        var newRealmPath = NSBundle.mainBundle().resourcePath?.stringByAppendingPathComponent("local.realm")
+        var isFileExists = NSFileManager.defaultManager().fileExistsAtPath(newRealmPath!)
+        if !isFileExists {
+             NSFileManager.defaultManager().copyItemAtPath(currentRealmPath!, toPath: newRealmPath!, error: nil)
+        }
+       
+        Realm.defaultPath = newRealmPath!
+        
         // Override point for customization after application launch.
+        
         return true
     }
 

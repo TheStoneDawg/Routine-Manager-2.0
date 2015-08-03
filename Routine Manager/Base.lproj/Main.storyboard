@@ -116,12 +116,12 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BVi-DE-sbr">
                                 <rect key="frame" x="16" y="227" width="568" height="29"/>
                                 <segments>
+                                    <segment title="Floor"/>
                                     <segment title="Pommel"/>
                                     <segment title="Rings"/>
-                                    <segment title="Floor"/>
-                                    <segment title="P-bars"/>
+                                    <segment title="Vault"/>
+                                    <segment title="Parallel Bars"/>
                                     <segment title="High Bar"/>
-                                    <segment title="Floor"/>
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-cc-U5U">

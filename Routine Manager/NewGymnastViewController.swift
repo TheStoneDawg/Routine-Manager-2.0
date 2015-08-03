@@ -14,6 +14,7 @@ class NewGymnastViewController: UIViewController {
     
     
     @IBAction func donePressed(sender: UIBarButtonItem) {
+        
         let gymnast = Gymnast()
         gymnast.name = nameTextField.text
         Realm().write{

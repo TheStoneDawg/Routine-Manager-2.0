@@ -10,8 +10,11 @@
 import RealmSwift
 
 class GymnastTableViewController: UITableViewController {
+    
+    
     override func viewDidAppear(animated: Bool) {
         self.tableView.reloadData()
+        
     }
   
         //Complete!
